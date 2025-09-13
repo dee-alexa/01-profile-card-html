@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 6 Productions LLC - Profile</title>
+    <style>
+        :root {
+            --maroon: #800000;
+            --gold: #FFD700;
+            --auburn: #A52A2A;
+        }
+        body {
+            background: linear-gradient(135deg, var(--maroon) 60%, var(--auburn) 100%);
+            color: var(--gold);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card {
+            background: rgba(255, 215, 0, 0.08);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(128,0,0,0.25);
+            padding: 2.5rem 2rem;
+            max-width: 400px;
+            text-align: center;
+            border: 2px solid var(--gold);
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--gold);
+            margin-bottom: 1.2rem;
+            background: var(--auburn);
+        }
+        h1 {
+            margin: 0.5rem 0 0.2rem 0;
+            color: var(--gold);
+            font-size: 2rem;
+        }
+        h2 {
+            margin: 0 0 1.2rem 0;
+            color: var(--maroon);
+            background: var(--gold);
+            display: inline-block;
+            padding: 0.2em 0.8em;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .roles {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .mission {
+            background: var(--auburn);
+            color: var(--gold);
+            border-radius: 10px;
+            padding: 1.2em 1em;
+            font-size: 1.05rem;
+            margin-top: 1.5rem;
+            box-shadow: 0 2px 8px 0 rgba(128,0,0,0.10);
+        }
+        @media (max-width: 500px) {
+            .profile-card {
+                padding: 1.2rem 0.5rem;
+                max-width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="img/me.png" alt="Profile Photo" class="profile-img">
+        <h1>Your Name</h1>
+        <h2>Team 6 Productions LLC</h2>
+        <div class="roles">
+            Screenwriter &nbsp;|&nbsp; Director &nbsp;|&nbsp; Producer
+        </div>
+        <div class="mission">
+            <strong>Mission Statement:</strong><br>
+            Aiming to create diverse cinematic art that transcends time and is enlightning as well as entertaining.
+        </div>
+    </div>
+</body>
+</html>
